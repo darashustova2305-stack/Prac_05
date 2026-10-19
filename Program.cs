@@ -1,5 +1,5 @@
-﻿int elementCount = 8_000_000;
-int stepCount = 4;
+﻿int elementCount = 16_000_000;
+int stepCount = 2;
 int bytesPerElement = 4;
 double bytesPerMiB = 1024.0 * 1024;
 List<int[]> blocks = new List<int[]>();
@@ -15,7 +15,7 @@ for ( byte step = 1; step <= stepCount; step++)
             int[] block = new int[elementCount];
             for (int i = 0; i < block.Length; i++)
             {
-                block[i] = 1;
+                block[i] = 1_000_000;
             }
             blocks.Add(block);
 
